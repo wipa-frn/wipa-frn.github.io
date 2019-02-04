@@ -44,3 +44,12 @@ body{
     background-color: rgb(165, 200, 209);
     border: 10px solid rgb(165, 200, 209);
 }
+
+.reference{    
+    background-color: rgb(241, 169, 159);
+    border: 10px solid rgb(241, 169, 159);
+}
+
+img{
+    padding-left: 10%; 
+}

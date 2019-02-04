@@ -10,35 +10,38 @@
         <div class="leftContent">
             <div class="meaning">
                 <h2>CSS Specificity</h2>
-                <p>CSS Specificity เหมือนเป็นค่าคะแนนบางอย่างที่สามารถช่วยให้บราวเซอร์ตัดสินใจได้ว่าจะ ใช้ css rules ใดในการ apply element ซึ่งวิธีการตัดสินใจก็คือจะเช็คค่าคะแนนจาก selector ของ rules นั้นๆ 
+                <p>CSS Specificity เหมือนเป็นค่าคะแนนบางอย่างที่สามารถช่วยให้ browser ตัดสินใจได้ว่าจะ ใช้ css rules ใดในการ apply element (จริงๆแล้วค่าคะแนนดังกล่าวไม่ได้มีอยู่จริง เป็นเพียงการสมมุติเพื่อให้เกิดความเข้าใจได้ง่ายๆเท่านั้น) ซึ่งวิธีการตัดสินใจก็คือจะเช็คค่าคะแนนจาก selector ของ rules นั้นๆ 
                 ถ้าหาก rules ใดมีค่าคะแนนมากที่สุด จะถูกนำไป apply element ซึ่งก็จะทำให้หน้าเว็บแสดงผล css style นั้นออกมา</p>
-                <p>โดยปกติแล้ว browserจะตัดสินใจเลือก rules ที่มาจาก external css ลำดับล่าสุดก่อน 
-                    ถ้าเป็น rules ที่มาจาก external css เดียวกัน แล้วมีกรณีที่ rules มี selector เหมือนกัน แสดงว่ามีค่าคะแนนเท่ากัน จะเลือก selector ที่เป็นตัวที่ซ้ำกันล่าสุด เช่น 
+                <p>โดยปกติแล้ว browser จะตัดสินใจเลือก rules ที่มาจาก external css ลำดับล่าสุดก่อน 
+                    ถ้าเป็น rules ที่มาจาก external css เดียวกัน แล้วมีกรณีที่ rules มี selector เหมือนกัน แสดงว่ามีค่าคะแนนเท่ากัน และเนื่องจากเป็นการอ่านโค้ดจากบนลงล่าง browser 
+                    จะเลือก selector ที่เป็นตัวล่าสุด เช่น 
                    <br><br>h1 {background-color: yellow;}
                    <br>h1 {background-color: red;} 
                    <br><br>browser จะเลือก  h1 {background-color: red;} ไป apply</p>
+                   <img src="Screenshot_2019-02-04-1.png" height="250">
                 </div>
             <div class="hierachy">
                 <h2>Specificity Hierarchy </h2>
                 <ul>
-                    <li>Inline styles เช่น  E< h1 style="color: #d45252;">
+                    <li>Inline styles จะเป็น style ที่ apply element ได้โดยตรงดังนั้นจึงมีค่าคะแนนมากที่สุด เช่น  E< h1 style="color: #d45252;">
                         <br>&#8594; มีค่าคะแนน 1000</li>
-                    <li>ID เช่น  #navbar 
+                    <li>ID Selector เช่น  #navbar 
                             <br>&#8594; มีค่าคะแนน 100</li>
-                    <li>Classes, attributes and pseudo-classes เช่น .class , [attributes] , :hover
+                    <li>Classes, attributes and pseudo-classes Selector เช่น .class , [attributes] , :hover
                             <br>&#8594; มีค่าคะแนน 10</li>
                     <li>Elements and pseudo-elements เช่น ชื่อ element ต่างๆ (div, h1, p) และ (:before, :after) 
                             <br>&#8594; มีค่าคะแนน 1</li>
                 </ul>
             </div>
+
+        </div>
+        <div class="rightContent">  
+
             <div class="calculate"> 
                 <h2>How to calculate</h2>    
                 <p>จำแนก slector แต่ละตัวใน rules ว่าแต่ละตัวมีค่าคะแนนเท่าไหร่ แล้วนำค่าคะแนนของทุกตัวมารวมกัน ก็จะได้ผลลัพธ์เป็นค่าของคะแนนรวม</p>
-                <p>*จริงๆแล้วค่าคะแนนดังกล่าวไม่ได้มีอยู่จริง เป็นเพียงการสมมุติเพื่อให้เกิดความเข้าใจได้ง่ายๆเท่านั้น</p>      
+      
             </div>
-        </div>
-        <div class="rightContent">                
-
             <div class="calculateEx">
                 <h2>ตัวอย่างการคำนวณ</h2>
                 <ul>
@@ -46,6 +49,8 @@
                     <li>#a {background-color: yellow;} &#8594; 100 = 100</li>
                     <li>div[id=a] {background-color: blue;} &#8594; 1 + 10 = 11</li>
                     <p>ผลลัพธ์ คือ div#a {background-color: green;} จะถูก apply เพราะมีค่าคะแนนมากที่สุด</li>
+                    <br><br>
+                    <img src="Screenshot_2019-02-04.png" height="250">
                 </ul>
 
             </div>
@@ -57,6 +62,9 @@
                     <li>
                         <a href="https://www.w3schools.com/css/css_specificity.asp">
                             w3schools.com</a>
+                    </li>
+                    <li>
+                        <a href="https://medium.com/@thanuphon18/css-specificity-%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%87%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B9%86-%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B8%84%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%84%E0%B8%A2%E0%B8%A3%E0%B8%B9%E0%B9%89-f23a0bf5ae87">medium.com/@thanuphon18</a>
                     </li>
                 </ul>
             </div>
