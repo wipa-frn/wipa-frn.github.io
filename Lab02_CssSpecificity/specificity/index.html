@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Specificity</title>
+	<link rel="stylesheet" type="text/css" href="style-code.css">
+	<link rel="stylesheet" type="text/css" href="style-1.css">
+	<link rel="stylesheet" type="text/css" href="style-2.css">
+</head>
+<body>
+
+	<header>
+		<h1>INDEX.html</h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li class="active">
+				<a href="index.html">INDEX</a>
+			</li>
+			<li>
+				<a href="home.html">HOME</a>
+			</li>
+		</ul>
+	</nav>
+
+	<section class="code">
+		<pre>
+/* style-1.css */
+ul li {
+	display: inline-block;
+	list-style: none;
+	padding: 10px;
+}
+
+ul li a {
+	text-decoration: none;
+	color: red;
+}
+
+ul li.active {
+	background-color: green;
+}
+		</pre>
+
+		<pre>
+/* style-2.css */
+ul li {
+	display: inline-block;
+	list-style: none;
+	padding: 10px;
+}
+
+ul li.active a {
+	color: gold;
+}
+
+ul li a {
+	text-decoration: none;
+	color: red;
+}
+
+ul li.active {
+	background-color: transparent;
+}
+		</pre>
+	</section>
+
+	
+</body>
+</html>
