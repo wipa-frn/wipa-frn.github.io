@@ -1,0 +1,46 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "43be174b82af7559a7550ea38650ae4f",
+      "css": "css",
+      "code": 59392,
+      "src": "elusive"
+    },
+    {
+      "uid": "9019381ddbf3c1007639974a480c86c2",
+      "css": "cc",
+      "code": 59393,
+      "src": "elusive"
+    },
+    {
+      "uid": "d4385b9337eeaa7feb48465b50649042",
+      "css": "universal-access",
+      "code": 59394,
+      "src": "elusive"
+    },
+    {
+      "uid": "8669af50382b53c48b9b803692828dd0",
+      "css": "github-circled-alt2",
+      "code": 61526,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "ff44f01f60948555026580eedf1e39bb",
+      "css": "html5-1",
+      "code": 61755,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "9dd9e835aebe1060ba7190ad2b2ed951",
+      "css": "search",
+      "code": 59395,
+      "src": "fontawesome"
+    }
+  ]
+}
