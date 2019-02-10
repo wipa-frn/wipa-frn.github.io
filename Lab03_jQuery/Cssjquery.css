@@ -1,0 +1,59 @@
+/*Wipawadee Monkhut 5910406451*/
+@import 'https://fonts.googleapis.com/css?family=Prompt:200,300,400,500';
+
+body{
+    width: 100%;
+    font-family: 'Prompt', sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 2em; 
+    padding-top: 2%;
+    padding-bottom: 2%;  
+}
+.headerTable .footerTable th{
+    text-align: center;
+}
+
+.hero-body h1{
+    text-align: left;
+    
+}
+.field-body{
+    justify-content: center;
+    
+}
+div #advanced-search{
+    margin-left: 50%; 
+}
+.hero .is-primary{
+    background-color:hsl(48, 100%, 67%); 
+}
+
+
+#section-advance-search{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#section-advance-search div{
+    padding-left:2%;
+    padding-right: 2%; 
+    padding-top: 3%;
+    padding-bottom: 3%;  
+}
+
+.headerTable {
+    background-color: hsl(171, 70%, 47%);
+    text-align: center;
+}
+.footerTable{
+    background-color: hsl(171, 70%, 47%);
+}
+.reference-data{
+    text-align: right;
+}
+
