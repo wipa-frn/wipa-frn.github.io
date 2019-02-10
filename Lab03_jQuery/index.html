@@ -1,0 +1,162 @@
+<!--Wipawadee Monkhut 5910406451-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab03 JQuery </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="bulma.min.css">
+    
+    <link rel="stylesheet" href="Cssjquery.css">
+
+</head>
+<body>
+    <section class="hero hero is-medium is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title" >ตลาดหลักทรัพย์แห่งประเทศไทย</h1>
+                <h2 class="subtitle">Stock Exchange of Thailand, SET</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+    <div class="container"></div>
+        <div class="level">
+            <div class="level-item">
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label" for="input-text" >ใส่คำค้นหา</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                        <p class="control has-icons-right">
+                            <input  class="input is-rounded" 
+                                    type="text" id="input-text"
+                                    placeholder="Enter some text ">
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </p>
+                        </div>
+
+                        <div class="control">
+                            <button id="submit-btn" class="button is-primary">
+                                Search
+                            </button>
+                        </div>
+                        
+                        <div >
+                            <button id="advanced-search" class="button is-primary is-outlined" >
+                                Advanced Search
+                            </button>
+                       </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="section-advance-search">
+            <div>
+                <label>
+                    <input id="symbolCheck" type="checkbox" class="filled-in" checked="checked" />
+                        <span>หลักทรัพย์</span>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input id="companyCheck" type="checkbox" class="filled-in" checked="checked" />
+                        <span>บริษัท</span>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input id="marketCheck"type="checkbox" class="filled-in" checked="checked" />
+                        <span>ตลาด</span>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input id="industryCheck" type="checkbox" class="filled-in" checked="checked" />
+                        <span>กลุ่มอุตสาหกรรม</span>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input id="sectorCheck" type="checkbox" class="filled-in" checked="checked" />
+                        <span>หมวดธุรกิจ</span>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input id="webSite" type="checkbox" class="filled-in" checked="checked" />
+                        <span>เว็บไซต์</span>
+                </label>
+            </div>
+
+        </div>
+
+        <div class="sectionTable">
+            <header>
+                <h1>รายชื่อบริษัทจดทะเบียนในตลาดหลักทรัพย์แห่งประเทศไทย</h1>
+                <br>
+            </header>
+        <div style="overflow-y:auto;">
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+
+                <thead class="headerTable" id="header-table">
+                    <tr>
+                        <th><abbr title="Order">ลำดับที่</abbr></th>
+                        <th><abbr title="Symbol">หลักทรัพย์</abbr></th>
+                        <th><abbr title="Company">บริษัท</abbr></th>
+                        <th><abbr title="Market">ตลาด</abbr></th>
+                        <th><abbr title="Industry">กลุ่มอุตสาหกรรม</abbr></th>
+                        <th><abbr title="Sector">หมวดธุรกิจ</abbr></th>
+                        <th><abbr title="WebSite">เว็บไซต์</abbr></th>
+                    </tr>
+                </thead>
+
+                <tbody class="bodyTable" id="body-table">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>            
+                        <td></td>                  
+                        <td></td>                     
+                        <td></td>                        
+                        <td></td>
+                    </tr>
+                </tbody>
+
+                <tfoot class = "footerTable">
+                    <tr>
+                        <th><abbr title="Order">ลำดับที่</abbr></th>
+                        <th><abbr title="Symbol">หลักทรัพย์</abbr></th>
+                        <th><abbr title="Company">บริษัท</abbr></th>
+                        <th><abbr title="Market">ตลาด</abbr></th>
+                        <th><abbr title="Industry">กลุ่มอุตสาหกรรม</abbr></th>
+                        <th><abbr title="Sector">หมวดธุรกิจ</abbr></th>
+                        <th><abbr title="WebSite">เว็บไซต์</abbr></th> 
+                    </tr>
+                </tfoot>
+
+            </table>
+
+            <div class="reference-data">
+                <a href="https://www.set.or.th/th/company/companylist.html">ข้อมูลรายชื่อบริษัท/หลักทรัพย์ จากตลาดหลักทรัพย์แห่งประเทศไทย (Stock Exchange of Thailand, SET) </a>
+                
+                <h3>Created by Wipawadee Monkhut 5910406451</h3>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="myscript.js"></script>
+</body>
+</html>

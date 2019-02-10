@@ -1,0 +1,786 @@
+[
+   {
+      "Symbol":"2S",
+      "Company":"บริษัท 2 เอส เมทัล จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"สินค้าอุตสาหกรรม",
+      "Sector":"-",
+      "WebSite":"www.ss.co.th"
+   },
+   {
+      "Symbol":"7UP",
+      "Company":"บริษัท เซเว่น ยูทิลิตี้ส์ แอนด์ พาวเวอร์ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"เทคโนโลยี",
+      "Sector":"เทคโนโลยีสารสนเทศและการสื่อสาร",
+      "WebSite":"www.sevenup.co.th"
+   },
+   {
+      "Symbol":"A",
+      "Company":"บริษัท อารียา พรอพเพอร์ตี้ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"อสังหาริมทรัพย์และก่อสร้าง",
+      "Sector":"พัฒนาอสังหาริมทรัพย์",
+      "WebSite":"www.areeya.co.th"
+   },
+   {
+      "Symbol":"AAV",
+      "Company":"บริษัท เอเชีย เอวิเอชั่น จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"บริการ",
+      "Sector":"ขนส่งและโลจิสติกส์",
+      "WebSite":"www.aavplc.com"
+   },
+   {
+      "Symbol":"ABICO",
+      "Company":"บริษัท เอบิโก้ โฮลดิ้งส์ จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"เกษตรและอุตสาหกรรมอาหาร",
+      "Sector":"-",
+      "WebSite":"www.abicogroup.com"
+   },
+   {
+      "Symbol":"ABM",
+      "Company":"บริษัท เอเชีย ไบโอแมส จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"ทรัพยากร",
+      "Sector":"-",
+      "WebSite":"www.asiabiomass.com"
+   },
+   {
+      "Symbol":"ABPIF",
+      "Company":"กองทุนรวมโครงสร้างพื้นฐานโรงไฟฟ้า อมตะ บี.กริม เพาเวอร์",
+      "Market":"SET",
+      "Industry":"ทรัพยากร",
+      "Sector":"พลังงานและสาธารณูปโภค",
+      "WebSite":"www.kasikornasset.com"
+   },
+   {
+      "Symbol":"ACAP",
+      "Company":"บริษัท เอเชีย แคปปิตอล กรุ๊ป จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"ธุรกิจการเงิน",
+      "Sector":"-",
+      "WebSite":"www.acap.co.th"
+   },
+   {
+      "Symbol":"ACC",
+      "Company":"บริษัท แอดวานซ์ คอนเนคชั่น คอร์ปอเรชั่น จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"สินค้าอุปโภคบริโภค",
+      "Sector":"ของใช้ในครัวเรือนและสำนักงาน",
+      "WebSite":"www.acc-plc.com"
+   },
+   {
+      "Symbol":"ADAM",
+      "Company":"บริษัท อาดามัส อินคอร์ปอเรชั่น จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"บริการ",
+      "Sector":"-",
+      "WebSite":"www.adamas.co.th"
+   },
+   {
+      "Symbol":"ADB",
+      "Company":"บริษัท แอ็พพลาย ดีบี จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"สินค้าอุตสาหกรรม",
+      "Sector":"-",
+      "WebSite":"www.adb.co.th"
+   },
+   {
+      "Symbol":"ADVANC",
+      "Company":"บริษัท แอดวานซ์ อินโฟร์ เซอร์วิส จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"เทคโนโลยี",
+      "Sector":"เทคโนโลยีสารสนเทศและการสื่อสาร",
+      "WebSite":"www.investor.ais.co.th"
+   },
+   {
+      "Symbol":"AEC",
+      "Company":"บริษัทหลักทรัพย์ เออีซี จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"ธุรกิจการเงิน",
+      "Sector":"เงินทุนและหลักทรัพย์",
+      "WebSite":"www.aecs.com"
+   },
+   {
+      "Symbol":"AEONTS",
+      "Company":"บริษัท อิออน ธนสินทรัพย์ (ไทยแลนด์) จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"ธุรกิจการเงิน",
+      "Sector":"เงินทุนและหลักทรัพย์",
+      "WebSite":"www.aeon.co.th"
+   },
+   {
+      "Symbol":"AF",
+      "Company":"บริษัท ไอร่า แฟคตอริ่ง จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"ธุรกิจการเงิน",
+      "Sector":"-",
+      "WebSite":"www.airafactoring.co.th"
+   },
+   {
+      "Symbol":"AFC",
+      "Company":"บริษัท เอเซียไฟเบอร์ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"สินค้าอุปโภคบริโภค",
+      "Sector":"แฟชั่น",
+      "WebSite":"www.asiafiber.com"
+   },
+   {
+      "Symbol":"AGE",
+      "Company":"บริษัท เอเชีย กรีน เอนเนอจี จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"ทรัพยากร",
+      "Sector":"-",
+      "WebSite":"www.agecoal.com"
+   },
+   {
+      "Symbol":"AH",
+      "Company":"บริษัท อาปิโก ไฮเทค จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"สินค้าอุตสาหกรรม",
+      "Sector":"ยานยนต์",
+      "WebSite":"www.aapico.com"
+   },
+   {
+      "Symbol":"AHC",
+      "Company":"บริษัท โรงพยาบาลเอกชล จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"บริการ",
+      "Sector":"การแพทย์",
+      "WebSite":"www.aikchol.com"
+   },
+   {
+      "Symbol":"AI",
+      "Company":"บริษัท เอเชียน อินซูเลเตอร์ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"ทรัพยากร",
+      "Sector":"พลังงานและสาธารณูปโภค",
+      "WebSite":"www.asianinsulators.com"
+   },
+   {
+      "Symbol":"AIE",
+      "Company":"บริษัท เอไอ เอนเนอร์จี จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"ทรัพยากร",
+      "Sector":"-",
+      "WebSite":"www.aienergy.co.th"
+   },
+   {
+      "Symbol":"AIMIRT",
+      "Company":"ทรัสต์เพื่อการลงทุนในอสังหาริมทรัพย์และสิทธิการเช่าอสังหาริมทรัพย์ เอไอเอ็ม อินดัสเทรียล โกรท",
+      "Market":"SET",
+      "Industry":"อสังหาริมทรัพย์และก่อสร้าง",
+      "Sector":"กองทุนรวมอสังหาริมทรัพย์และกองทรัสต์เพื่อการลงทุนในอสังหาริมทรัพย์",
+      "WebSite":"www.aimreit.com"
+   },
+   {
+      "Symbol":"AIRA",
+      "Company":"บริษัท ไอร่า แคปปิตอล จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"ธุรกิจการเงิน",
+      "Sector":"-",
+      "WebSite":"https://www.airacapital.co.th"
+   },
+   {
+      "Symbol":"AIT",
+      "Company":"บริษัท แอ็ดวานซ์ อินฟอร์เมชั่น เทคโนโลยี จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"เทคโนโลยี",
+      "Sector":"เทคโนโลยีสารสนเทศและการสื่อสาร",
+      "WebSite":"www.ait.co.th"
+   },
+   {
+      "Symbol":"AJ",
+      "Company":"บริษัท เอ.เจ.พลาสท์ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"สินค้าอุตสาหกรรม",
+      "Sector":"บรรจุภัณฑ์",
+      "WebSite":"www.ajplast.co.th"
+   },
+   {
+      "Symbol":"AJA",
+      "Company":"บริษัท เอเจ แอดวานซ์ เทคโนโลยี จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"สินค้าอุปโภคบริโภค",
+      "Sector":"ของใช้ในครัวเรือนและสำนักงาน",
+      "WebSite":"www.ajthai.com"
+   },
+   {
+      "Symbol":"AKP",
+      "Company":"บริษัท อัคคีปราการ จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"บริการ",
+      "Sector":"-",
+      "WebSite":"www.akkhie.com"
+   },
+   {
+      "Symbol":"AKR",
+      "Company":"บริษัท เอกรัฐวิศวกรรม จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"ทรัพยากร",
+      "Sector":"พลังงานและสาธารณูปโภค",
+      "WebSite":"www.ekarat.co.th"
+   },
+   {
+      "Symbol":"ALLA",
+      "Company":"บริษัท ออลล่า จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"สินค้าอุตสาหกรรม",
+      "Sector":"วัสดุอุตสาหกรรมและเครื่องจักร",
+      "WebSite":"www.alla.co.th"
+   },
+   {
+      "Symbol":"ALT",
+      "Company":"บริษัท เอแอลที เทเลคอม จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"เทคโนโลยี",
+      "Sector":"เทคโนโลยีสารสนเทศและการสื่อสาร",
+      "WebSite":"www.alt.co.th"
+   },
+   {
+      "Symbol":"ALUCON",
+      "Company":"บริษัท อลูคอน จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"สินค้าอุตสาหกรรม",
+      "Sector":"บรรจุภัณฑ์",
+      "WebSite":"www.alucon.th.com"
+   },
+   {
+      "Symbol":"AMA",
+      "Company":"บริษัท อาม่า มารีน จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"บริการ",
+      "Sector":"-",
+      "WebSite":"www.amamarine.co.th"
+   },
+   {
+      "Symbol":"AMANAH",
+      "Company":"บริษัท อะมานะฮ์ ลิสซิ่ง จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"ธุรกิจการเงิน",
+      "Sector":"เงินทุนและหลักทรัพย์",
+      "WebSite":"www.amanah.co.th"
+   },
+   {
+      "Symbol":"AMARIN",
+      "Company":"บริษัท อมรินทร์พริ้นติ้ง แอนด์ พับลิชชิ่ง จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"บริการ",
+      "Sector":"สื่อและสิ่งพิมพ์",
+      "WebSite":"www.amarin.com"
+   },
+   {
+      "Symbol":"AMATA",
+      "Company":"บริษัท อมตะ คอร์ปอเรชัน จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"อสังหาริมทรัพย์และก่อสร้าง",
+      "Sector":"พัฒนาอสังหาริมทรัพย์",
+      "WebSite":"www.amata.com"
+   },
+   {
+      "Symbol":"AMATAR",
+      "Company":"ทรัสต์เพื่อการลงทุนในอสังหาริมทรัพย์และสิทธิการเช่าอมตะซัมมิทโกรท",
+      "Market":"SET",
+      "Industry":"อสังหาริมทรัพย์และก่อสร้าง",
+      "Sector":"กองทุนรวมอสังหาริมทรัพย์และกองทรัสต์เพื่อการลงทุนในอสังหาริมทรัพย์",
+      "WebSite":"www.amatareit.com"
+   },
+   {
+      "Symbol":"AMATAV",
+      "Company":"บริษัท อมตะ วีเอ็น จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"อสังหาริมทรัพย์และก่อสร้าง",
+      "Sector":"พัฒนาอสังหาริมทรัพย์",
+      "WebSite":"www.amatavn.com"
+   },
+   {
+      "Symbol":"AMC",
+      "Company":"บริษัท เอเซีย เมทัล จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"สินค้าอุตสาหกรรม",
+      "Sector":"เหล็ก",
+      "WebSite":"www.asiametal.co.th"
+   },
+   {
+      "Symbol":"ANAN",
+      "Company":"บริษัท อนันดา ดีเวลลอปเม้นท์ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"อสังหาริมทรัพย์และก่อสร้าง",
+      "Sector":"พัฒนาอสังหาริมทรัพย์",
+      "WebSite":"www.ananda.co.th"
+   },
+   {
+      "Symbol":"AOT",
+      "Company":"บริษัท ท่าอากาศยานไทย จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"บริการ",
+      "Sector":"ขนส่งและโลจิสติกส์",
+      "WebSite":"www.airportthai.co.th"
+   },
+   {
+      "Symbol":"AP",
+      "Company":"บริษัท เอพี (ไทยแลนด์) จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"อสังหาริมทรัพย์และก่อสร้าง",
+      "Sector":"พัฒนาอสังหาริมทรัพย์",
+      "WebSite":"www.apthai.com"
+   },
+   {
+      "Symbol":"APCO",
+      "Company":"บริษัท เอเชียน ไฟย์โตซูติคอลส์ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"สินค้าอุปโภคบริโภค",
+      "Sector":"ของใช้ส่วนตัวและเวชภัณฑ์",
+      "WebSite":"www.apco.co.th"
+   },
+   {
+      "Symbol":"APCS",
+      "Company":"บริษัท เอเซีย พรีซิชั่น จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"สินค้าอุตสาหกรรม",
+      "Sector":"ยานยนต์",
+      "WebSite":"www.asiaprecision.com"
+   },
+   {
+      "Symbol":"APEX",
+      "Company":"บริษัท เอเพ็กซ์ ดีเวลลอปเม้นท์ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"อสังหาริมทรัพย์และก่อสร้าง",
+      "Sector":"พัฒนาอสังหาริมทรัพย์",
+      "WebSite":"www.apexpcl.com"
+   },
+   {
+      "Symbol":"APURE",
+      "Company":"บริษัท อกริเพียว โฮลดิ้งส์ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"เกษตรและอุตสาหกรรมอาหาร",
+      "Sector":"อาหารและเครื่องดื่ม",
+      "WebSite":"www.apureholdings.com"
+   },
+   {
+      "Symbol":"AQ",
+      "Company":"บริษัท เอคิว เอสเตท จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"อสังหาริมทรัพย์และก่อสร้าง",
+      "Sector":"พัฒนาอสังหาริมทรัพย์",
+      "WebSite":"www.aqestate.com"
+   },
+   {
+      "Symbol":"AQUA",
+      "Company":"บริษัท อควา คอร์เปอเรชั่น จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"บริการ",
+      "Sector":"สื่อและสิ่งพิมพ์",
+      "WebSite":"www.aquacorp.co.th"
+   },
+   {
+      "Symbol":"ARIP",
+      "Company":"บริษัท เออาร์ไอพี จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"บริการ",
+      "Sector":"-",
+      "WebSite":"www.aripplc.com"
+   },
+   {
+      "Symbol":"ARROW",
+      "Company":"บริษัท แอร์โรว์ ซินดิเคท จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"อสังหาริมทรัพย์และก่อสร้าง",
+      "Sector":"-",
+      "WebSite":"www.arrowpipe.com"
+   },
+   {
+      "Symbol":"AS",
+      "Company":"บริษัท เอเชียซอฟท์ คอร์ปอเรชั่น จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"บริการ",
+      "Sector":"สื่อและสิ่งพิมพ์",
+      "WebSite":"www.as-th.listedcompany.com"
+   },
+   {
+      "Symbol":"ASAP",
+      "Company":"บริษัท ซินเนอร์เจติค ออโต้ เพอร์ฟอร์มานซ์ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"ธุรกิจการเงิน",
+      "Sector":"เงินทุนและหลักทรัพย์",
+      "WebSite":"www.asapcarrent.com"
+   },
+   {
+      "Symbol":"ASEFA",
+      "Company":"บริษัท อาซีฟา จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"สินค้าอุตสาหกรรม",
+      "Sector":"วัสดุอุตสาหกรรมและเครื่องจักร",
+      "WebSite":"www.asefa.co.th"
+   },
+   {
+      "Symbol":"ASIA",
+      "Company":"บริษัท เอเชียโฮเต็ล จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"บริการ",
+      "Sector":"การท่องเที่ยวและสันทนาการ",
+      "WebSite":"www.asiahotel.co.th"
+   },
+   {
+      "Symbol":"ASIAN",
+      "Company":"บริษัท ห้องเย็นเอเชี่ยน ซีฟู้ด จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"เกษตรและอุตสาหกรรมอาหาร",
+      "Sector":"อาหารและเครื่องดื่ม",
+      "WebSite":"www.asianseafoods.co.th"
+   },
+   {
+      "Symbol":"ASIMAR",
+      "Company":"บริษัท เอเชียน มารีน เซอร์วิสส์ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"บริการ",
+      "Sector":"ขนส่งและโลจิสติกส์",
+      "WebSite":"www.asimar.com"
+   },
+   {
+      "Symbol":"ASK",
+      "Company":"บริษัท เอเซียเสริมกิจลีสซิ่ง จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"ธุรกิจการเงิน",
+      "Sector":"เงินทุนและหลักทรัพย์",
+      "WebSite":"www.ask.co.th"
+   },
+   {
+      "Symbol":"ASN",
+      "Company":"บริษัท เอเอสเอ็น โบรกเกอร์ จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"ธุรกิจการเงิน",
+      "Sector":"-",
+      "WebSite":"www.asnbroker.co.th"
+   },
+   {
+      "Symbol":"ASP",
+      "Company":"บริษัท เอเซีย พลัส กรุ๊ป โฮลดิ้งส์ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"ธุรกิจการเงิน",
+      "Sector":"เงินทุนและหลักทรัพย์",
+      "WebSite":"www.asiaplusgroup.co.th"
+   },
+   {
+      "Symbol":"ATP30",
+      "Company":"บริษัท เอทีพี 30 จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"บริการ",
+      "Sector":"-",
+      "WebSite":"www.atp30.com"
+   },
+   {
+      "Symbol":"AU",
+      "Company":"บริษัท อาฟเตอร์ ยู จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"เกษตรและอุตสาหกรรมอาหาร",
+      "Sector":"-",
+      "WebSite":"www.afteryoudessertcafe.com"
+   },
+   {
+      "Symbol":"AUCT",
+      "Company":"บริษัท สหการประมูล จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"บริการ",
+      "Sector":"-",
+      "WebSite":"www.auct.co.th"
+   },
+   {
+      "Symbol":"AYUD",
+      "Company":"บริษัท ศรีอยุธยา แคปปิตอล จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"ธุรกิจการเงิน",
+      "Sector":"ประกันภัยและประกันชีวิต",
+      "WebSite":"www.ayud.co.th"
+   },
+   {
+      "Symbol":"B",
+      "Company":"บริษัท บี จิสติกส์ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"บริการ",
+      "Sector":"ขนส่งและโลจิสติกส์",
+      "WebSite":"www.btc.co.th"
+   },
+   {
+      "Symbol":"BA",
+      "Company":"บริษัท การบินกรุงเทพ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"บริการ",
+      "Sector":"ขนส่งและโลจิสติกส์",
+      "WebSite":"www.bangkokair.com"
+   },
+   {
+      "Symbol":"BAFS",
+      "Company":"บริษัท บริการเชื้อเพลิงการบินกรุงเทพ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"ทรัพยากร",
+      "Sector":"พลังงานและสาธารณูปโภค",
+      "WebSite":"www.bafsthai.com"
+   },
+   {
+      "Symbol":"BANPU",
+      "Company":"บริษัท บ้านปู จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"ทรัพยากร",
+      "Sector":"พลังงานและสาธารณูปโภค",
+      "WebSite":"www.banpu.com"
+   },
+   {
+      "Symbol":"BAT-3K",
+      "Company":"บริษัท ฮิตาชิ เคมิคอล สโตเรจ แบตเตอรี่ (ประเทศไทย) จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"สินค้าอุตสาหกรรม",
+      "Sector":"ยานยนต์",
+      "WebSite":"www.hitachi-chem-bt.com"
+   },
+   {
+      "Symbol":"BAY",
+      "Company":"ธนาคารกรุงศรีอยุธยา จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"ธุรกิจการเงิน",
+      "Sector":"ธนาคาร",
+      "WebSite":"www.krungsri.com"
+   },
+   {
+      "Symbol":"BBL",
+      "Company":"ธนาคารกรุงเทพ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"ธุรกิจการเงิน",
+      "Sector":"ธนาคาร",
+      "WebSite":"www.bangkokbank.com"
+   },
+   {
+      "Symbol":"BCH",
+      "Company":"บริษัท บางกอก เชน ฮอสปิทอล จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"บริการ",
+      "Sector":"การแพทย์",
+      "WebSite":"www.bangkokchainhospital.com"
+   },
+   {
+      "Symbol":"BCP",
+      "Company":"บริษัท บางจาก คอร์ปอเรชั่น จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"ทรัพยากร",
+      "Sector":"พลังงานและสาธารณูปโภค",
+      "WebSite":"www.bangchak.co.th"
+   },
+   {
+      "Symbol":"BCPG",
+      "Company":"บริษัท บีซีพีจี จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"ทรัพยากร",
+      "Sector":"พลังงานและสาธารณูปโภค",
+      "WebSite":"www.bcpggroup.com"
+   },
+   {
+      "Symbol":"BCT",
+      "Company":"บริษัท เบอร์ล่า คาร์บอน (ไทยแลนด์) จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"สินค้าอุตสาหกรรม",
+      "Sector":"ปิโตรเคมีและเคมีภัณฑ์",
+      "WebSite":"www.birlacarbon.com"
+   },
+   {
+      "Symbol":"BDMS",
+      "Company":"บริษัท กรุงเทพดุสิตเวชการ จำกัด(มหาชน)",
+      "Market":"SET",
+      "Industry":"บริการ",
+      "Sector":"การแพทย์",
+      "WebSite":"www.bangkokhospital.com"
+   },
+   {
+      "Symbol":"BEAUTY",
+      "Company":"บริษัท บิวตี้ คอมมูนิตี้ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"บริการ",
+      "Sector":"พาณิชย์",
+      "WebSite":"WWW.BEAUTYCOMMUNITY.CO.TH"
+   },
+   {
+      "Symbol":"BEC",
+      "Company":"บริษัท บีอีซี เวิลด์ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"บริการ",
+      "Sector":"สื่อและสิ่งพิมพ์",
+      "WebSite":"www.becworld.com"
+   },
+   {
+      "Symbol":"BEM",
+      "Company":"บริษัท ทางด่วนและรถไฟฟ้ากรุงเทพ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"บริการ",
+      "Sector":"ขนส่งและโลจิสติกส์",
+      "WebSite":"www.bemplc.co.th"
+   },
+   {
+      "Symbol":"BFIT",
+      "Company":"บริษัทเงินทุน ศรีสวัสดิ์ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"ธุรกิจการเงิน",
+      "Sector":"เงินทุนและหลักทรัพย์",
+      "WebSite":"www.bfit.co.th"
+   },
+   {
+      "Symbol":"BGC",
+      "Company":"บริษัท บีจี คอนเทนเนอร์ กล๊าส จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"สินค้าอุตสาหกรรม",
+      "Sector":"บรรจุภัณฑ์",
+      "WebSite":"www.bgc.co.th"
+   },
+   {
+      "Symbol":"BGRIM",
+      "Company":"บริษัท บี.กริม เพาเวอร์ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"ทรัพยากร",
+      "Sector":"พลังงานและสาธารณูปโภค",
+      "WebSite":"www.bgrimmpower.com"
+   },
+   {
+      "Symbol":"BGT",
+      "Company":"บริษัท บีจีที คอร์ปอเรชั่น จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"สินค้าอุปโภคบริโภค",
+      "Sector":"-",
+      "WebSite":"www.bodyglove.co.th"
+   },
+   {
+      "Symbol":"BH",
+      "Company":"บริษัท โรงพยาบาลบำรุงราษฎร์ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"บริการ",
+      "Sector":"การแพทย์",
+      "WebSite":"www.bumrungrad.com"
+   },
+   {
+      "Symbol":"BIG",
+      "Company":"บริษัท บิ๊ก คาเมร่า คอร์ปอเรชั่น จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"บริการ",
+      "Sector":"พาณิชย์",
+      "WebSite":"www.bigcamera.co.th"
+   },
+   {
+      "Symbol":"BIZ",
+      "Company":"บริษัท บิสซิเนสอะไลเม้นท์ จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"สินค้าอุปโภคบริโภค",
+      "Sector":"-",
+      "WebSite":"www.bizalignment.com"
+   },
+   {
+      "Symbol":"BJC",
+      "Company":"บริษัท เบอร์ลี่ ยุคเกอร์ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"บริการ",
+      "Sector":"พาณิชย์",
+      "WebSite":"www.bjc.co.th"
+   },
+   {
+      "Symbol":"BJCHI",
+      "Company":"บริษัท บีเจซี เฮฟวี่ อินดัสทรี จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"อสังหาริมทรัพย์และก่อสร้าง",
+      "Sector":"บริการรับเหมาก่อสร้าง",
+      "WebSite":"www.bjc1994.com"
+   },
+   {
+      "Symbol":"BKD",
+      "Company":"บริษัท บางกอก เดค-คอน จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"อสังหาริมทรัพย์และก่อสร้าง",
+      "Sector":"-",
+      "WebSite":"www.bangkokdeccon.com"
+   },
+   {
+      "Symbol":"BKI",
+      "Company":"บริษัท กรุงเทพประกันภัย จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"ธุรกิจการเงิน",
+      "Sector":"ประกันภัยและประกันชีวิต",
+      "WebSite":"www.bangkokinsurance.com"
+   },
+   {
+      "Symbol":"BKKCP",
+      "Company":"กองทุนรวมอสังหาริมทรัพย์บางกอก",
+      "Market":"SET",
+      "Industry":"อสังหาริมทรัพย์และก่อสร้าง",
+      "Sector":"กองทุนรวมอสังหาริมทรัพย์และกองทรัสต์เพื่อการลงทุนในอสังหาริมทรัพย์",
+      "WebSite":"-"
+   },
+   {
+      "Symbol":"BLA",
+      "Company":"บริษัท กรุงเทพประกันชีวิต จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"ธุรกิจการเงิน",
+      "Sector":"ประกันภัยและประกันชีวิต",
+      "WebSite":"www.bangkoklife.com"
+   },
+   {
+      "Symbol":"BLAND",
+      "Company":"บริษัท บางกอกแลนด์ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"อสังหาริมทรัพย์และก่อสร้าง",
+      "Sector":"พัฒนาอสังหาริมทรัพย์",
+      "WebSite":"www.bangkokland.co.th"
+   },
+   {
+      "Symbol":"BLISS",
+      "Company":"บริษัท บลิส-เทล จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"เทคโนโลยี",
+      "Sector":"เทคโนโลยีสารสนเทศและการสื่อสาร",
+      "WebSite":"www.blisstel.co.th"
+   },
+   {
+      "Symbol":"BM",
+      "Company":"บริษัท บางกอกชีทเม็ททัล จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"สินค้าอุตสาหกรรม",
+      "Sector":"-",
+      "WebSite":"www.bmplc.co.th"
+   },
+   {
+      "Symbol":"BOFFICE",
+      "Company":"ทรัสต์เพื่อการลงทุนในสิทธิการเช่าอสังหาริมทรัพย์ภิรัชออฟฟิศ",
+      "Market":"SET",
+      "Industry":"อสังหาริมทรัพย์และก่อสร้าง",
+      "Sector":"กองทุนรวมอสังหาริมทรัพย์และกองทรัสต์เพื่อการลงทุนในอสังหาริมทรัพย์",
+      "WebSite":"www.bofficereit.com"
+   },
+   {
+      "Symbol":"BOL",
+      "Company":"บริษัท บิซิเนส ออนไลน์ จำกัด (มหาชน)",
+      "Market":"mai",
+      "Industry":"บริการ",
+      "Sector":"-",
+      "WebSite":"www.BOL.co.th"
+   },
+   {
+      "Symbol":"BPP",
+      "Company":"บริษัท บ้านปู เพาเวอร์ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"ทรัพยากร",
+      "Sector":"พลังงานและสาธารณูปโภค",
+      "WebSite":"www.banpupower.com"
+   },
+   {
+      "Symbol":"BR",
+      "Company":"บริษัท บางกอกแร้นช์ จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"เกษตรและอุตสาหกรรมอาหาร",
+      "Sector":"อาหารและเครื่องดื่ม",
+      "WebSite":"www.br-brgroup.com"
+   },
+   {
+      "Symbol":"BROCK",
+      "Company":"บริษัท บ้านร็อคการ์เด้น จำกัด (มหาชน)",
+      "Market":"SET",
+      "Industry":"อสังหาริมทรัพย์และก่อสร้าง",
+      "Sector":"พัฒนาอสังหาริมทรัพย์",
+      "WebSite":"www.rockgarden.co.th"
+   }
+]
