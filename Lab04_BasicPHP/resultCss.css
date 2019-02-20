@@ -1,0 +1,69 @@
+/*Wipawadee Monkhut 5910406451*/
+@import 'https://fonts.googleapis.com/css?family=Cookie|Prompt:400,500,600,700';
+
+body{
+    font-family: 'Prompt', sans-serif;
+}
+.row{
+    margin:2%;
+}
+
+.nav-wrapper a{
+    font:3em 'Cookie', cursive;
+    font-family: 'Cookie', cursive;
+    padding-top:0.5%; 
+    
+}
+
+#column-left{
+    background-color:#f3aebf ;
+   
+}
+#column-right{
+
+    background-color:#fce9e9 ;
+}
+
+h5{
+    text-align: center;
+}
+
+#your_playlist{
+    padding-bottom: 5%;
+    padding-top: 5%; 
+    padding-left: 10%;
+    padding-right: 10% 
+}
+.table-music{
+    padding-left:10%;
+    padding-right:10%;  
+    padding-top: 5%;
+    padding-bottom: 5%; 
+    background-color:#ee9d85 ; 
+}
+
+.credit{
+    text-align: center;
+    color: rgb(57, 109, 124);
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 15px;
+  }
+
+  table{
+      background-color:#ffccbc; 
+  }
+
+.back{
+    margin-left: 50%; 
+}
+
+.card-content h6{
+    font-weight: 600;
+}

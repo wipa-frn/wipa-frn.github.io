@@ -1,0 +1,74 @@
+/*Wipawadee Monkhut 5910406451*/
+@import 'https://fonts.googleapis.com/css?family=Cookie|Prompt:400,500,600,700';
+
+body{
+    font-family: 'Prompt', sans-serif;
+}
+.row{
+    margin:2%;
+}
+
+/* label color */
+  .input-field label {
+    color: rgb(94, 94, 94);
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: rgb(138, 0, 0);
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid rgb(94, 94, 94);
+    box-shadow: 0 1px 0 0 rgb(94, 94, 94);
+}
+
+#logo{
+    font:3em 'Cookie', cursive;
+    font-family: 'Cookie', cursive;
+    padding-top:0.5%; 
+    
+}
+
+#template{
+    font: 1em 'Prompt', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    padding-top: 1.5%;
+    padding-right: 2%; 
+}
+#column-left{
+    background-color:#f3aebf ;
+   
+}
+#column-right{
+
+    background-color:#fce9e9 ;
+}
+
+h5{
+    text-align: center;
+}
+
+#form{ 
+    padding-top: 2%;
+    padding-bottom: 2%; 
+    padding-left:15%; 
+    padding-right:15%; 
+
+    background-color:#ffccbc ;
+}
+
+
+
+#submit-btn{
+    padding-left:40%;
+    padding-right:40%;  
+    padding-top: 5%;
+    padding-bottom: 5%; 
+    
+}
+
+.helper-text{
+    color: red;
+  }
+
+
