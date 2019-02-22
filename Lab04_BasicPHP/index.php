@@ -1,6 +1,6 @@
 <!--Wipawadee Monkhut 5910406451-->
 <?php 
-session_start()
+    session_start()
 ?>
 
 <!DOCTYPE html>
@@ -32,11 +32,8 @@ session_start()
 
     <?php
         ob_start();
-        //define viriable
 
-        //define validate text
-        $validateImgText = $validateCSVText = "";
-            //define error of file
+        //define error of file
         $phpFileUploadErrors = array(
                 0 => 'There is no error, the file uploaded with success',
                 1 => 'The uploaded file exceeds the upload_max_filesize directive in php.ini',
@@ -47,30 +44,34 @@ session_start()
                 7 => 'Failed to write file to disk.',
                 8 => 'A PHP extension stopped the file upload.',
         );
-        
+        //define viriable
         $firstNameErr = $lastNameErr= $emailErr = $accountNameErr = $imgTextErr = $csvTextErr = "" ; 
         $firstName = $lastName = $email = $accountName = $playlistTitle = $playlistDescription = "";  
         $imgSucces = $csvSuccess = "";  
         $imgFileName = $csvFileName = "";    
         
-        //check feild required 
+        
         if(isset($_POST['submit'])){
+
+            //check feild required 
             if (empty($_POST["first_name"])) {
                 $firstNameErr = "First name is required";
                 
             }
-            
             if (empty($_POST["last_name"])) {
                 $lastNameErr = "Last name is required";
             }
-
+            //name is not empty
             if(!empty($_POST["first_name"]) && !empty($_POST["last_name"])){
                 $firstName = test_input($_POST["first_name"]);
                 $lastName = test_input($_POST["last_name"]);
+                
+                //check first name and last name is not same language
                 if((preg_match("/^[a-zA-Z]*$/",$firstName) && preg_match("/^[ก-๏\s]*$/",$lastName)) || 
                 (preg_match("/^[ก-๏\s]*$/",$firstName) && preg_match("/^[a-zA-Z]*$/",$lastName))) {
                     $firstNameErr = $lastNameErr = "Letters of name must be same language";
                 }
+                //check only name letters ENG-THAI allowed
                 elseif (!preg_match("/^[ก-๏\s]*$/",$firstName) && !preg_match("/^[a-zA-Z]*$/",$firstName)){
                     $firstNameErr = "Only letters ENG-THAI allowed";
                 } 
@@ -80,7 +81,7 @@ session_start()
 
             }
                 
-
+             //check feild required 
             if (empty($_POST["email"])) {
                 $emailErr = "Email is required";
 
@@ -92,32 +93,24 @@ session_start()
             
                 }
             }
+             //check feild required 
             if (empty($_POST["account"])) {
                 $accountNameErr = "Account name is required";
        
               } else {
                 $accountName = test_input($_POST["account"]);
+                //check if account name is correct
                 if(!preg_match("/^@[ก-๏\s]*$/",$accountName) && !preg_match("/^@[a-zA-Z]*$/",$accountName)){
                     $accountNameErr = "Account name start with '@' and only letters ENG-THAI allowed" ;
                 }
 
             }
 
-            if(empty($_POST["playlist_title"])){
-                $playlistTitle = "";
-            }
-            else{
-                $playlistTitle = test_input($_POST["playlist_title"]);
-            }
-
-            if(empty($_POST["playlist_description"])){
-                $playlistDescription = "";
-            }
-            else{
-                $playlistDescription = test_input($_POST["playlist_description"]);
-            }
-
-            //assign value to session
+            //not check validate 
+            $playlistTitle = test_input($_POST["playlist_title"]);
+            $playlistDescription = test_input($_POST["playlist_description"]);
+ 
+            //assign value to session for use in another page
             $_SESSION['firstName'] = $firstName;
             $_SESSION['lastName'] = $lastName;
             $_SESSION['email'] = $email;
@@ -126,31 +119,36 @@ session_start()
             $_SESSION['playlistDescription'] = $playlistDescription;
 
             //validate Images file                                
-                if (isset($_FILES['fileImgToUpload']) ){
-                    $ext_error = false;
-                    $extensions_img = array('jpg', 'jpeg', 'gif', 'png');
-                    $file_ext = explode('.',$_FILES['fileImgToUpload']['name']);
-                    $file_ext = end($file_ext);
+            if (isset($_FILES['fileImgToUpload']) ){
+                $ext_error = false;
+                $extensions_img = array('jpg', 'jpeg', 'gif', 'png');           //file extension are allowed to upload
+                $file_ext = explode('.',$_FILES['fileImgToUpload']['name']);    //find extension file input
+                $file_ext = end($file_ext);
 
-                    //check file
-                    if(!in_array($file_ext,$extensions_img)){
-                        $ext_error = true;
-                    }
-                    //if error is not = 0
-                    if($_FILES['fileImgToUpload']['error']){
-                        $imgTextErr = $phpFileUploadErrors[$_FILES['fileImgToUpload']['error']];
+                //check file extension are allowed to upload
+                if(!in_array($file_ext,$extensions_img)){
+                    $ext_error = true;
+                }
+                //if file error                    
+                if($_FILES['fileImgToUpload']['error']){
+                    $imgTextErr = $phpFileUploadErrors[$_FILES['fileImgToUpload']['error']];
+                      
+                }
+                //if extension file is not allowed to upload
+                elseif ($ext_error){
+                    $imgTextErr = "Invilid file extension";
+                    
+                }
+                //upload file successfully
+                else{
+                    $imgSucces = "Upload image successfully!";
+
+                    //move file from 'tmp' to directory 'images' 
+                    move_uploaded_file($_FILES['fileImgToUpload']['tmp_name'],'images/' . $_FILES['fileImgToUpload']['name']);
                         
-                    }
-                    elseif ($ext_error){
-                        $imgTextErr = "Invilid file extension";
-                        
-                    }
-                    else{
-                        $imgSucces = "Upload image successfully!";
-                        move_uploaded_file($_FILES['fileImgToUpload']['tmp_name'],'images/' . $_FILES['fileImgToUpload']['name']);
-                        
-                    }
-                    $_SESSION['fileImgToUpload'] = $csvFileName =  $_FILES['fileImgToUpload']['name'];
+                }
+                //assign value to session for use in another page
+                $_SESSION['fileImgToUpload'] = $csvFileName =  $_FILES['fileImgToUpload']['name'];
                 }
 
             //validate CSV file
@@ -160,36 +158,37 @@ session_start()
                     $file_ext = explode('.',$_FILES['fileToUpload']['name']);
                     $file_ext = end($file_ext);
 
-                    //check file
+                    //check file extension are allowed to upload
                     if(!in_array($file_ext,$extensions_csv)){
                         $ext_error = true;
                     }
-                    //if error is not = 0
+                    //if file error  
                     if($_FILES['fileToUpload']['error']){
                         $csvTextErr = $phpFileUploadErrors[$_FILES['fileToUpload']['error']];
                     
                     }
+                    //if extension file is not allowed to upload
                     elseif ($ext_error){
                         $csvTextErr = "Invilid file extension";
                     }
+                    //upload file successfully
                     else{
                         $csvSuccess = "Upload image successfully!";
+
+                        //move file from 'tmp' to directory 'csv' 
                         move_uploaded_file($_FILES['fileToUpload']['tmp_name'],'csv/' . $_FILES['fileToUpload']['name']);
                     }
-                    
+                    //assign value to session for use in another page
                     $_SESSION['fileToUpload'] = $imgFileName = $_FILES['fileToUpload']['name'];
                 }
 
-
+            //validate all feild is sucessfully --> go to 'result.php' page
             if($firstNameErr == "" && $lastNameErr == "" && $emailErr == "" && $accountNameErr == "" && $imgTextErr == "" && $csvTextErr == ""){
                 unset($_POST["submit"]);            
                 header("Location: result.php");
                 ob_end_flush();
                 exit();
             }
-
-
-
 
         }
 
@@ -200,6 +199,7 @@ session_start()
             return $data;
           }
     ?>
+
         <!-- Navbar goes here -->
         <nav>
             <div class="nav-wrapper">
@@ -216,17 +216,18 @@ session_start()
                 <div class="row-left">
                     <div class="col">
                     <div class="card medium">
+
                         <div class="card-image">
-                        <img src="add-image.png">
-                                
+                            <img src="add-image.png">     
                         </div>
+
                         <div class="card-content">
                             <p></p>
                             <p></p>
                             <p>Title :</p>
                             <p>Playlist Description : </p>
-                           
                         </div>
+
                     </div>
                     </div>
                 </div>
@@ -235,109 +236,95 @@ session_start()
     
             <div class="col s9" id="column-right">
             <!-- Teal page content  -->
-    
+                <div class="row-right">
+                    <form class="col s12" id="form" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" enctype="multipart/form-data">
+                        <h5>My Playlist Form</h5><br>
+                        <!--firstname + lastname-->
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first_name" name = "first_name" type="text"  value="<?php echo $firstName; ?>">
+                                <label for="first_name">*First Name</label>
+                                <span class="helper-text" ><?php echo $firstNameErr ?></span>
+                            </div>
 
-            <div class="row-right">
-                <form class="col s12" id="form" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" enctype="multipart/form-data">
-                    <h5>My Playlist Form</h5>
-                    <br>
-                    
-                    <div class="row">
-                        <div class="input-field col s6">
-                            
-                            <input id="first_name" name = "first_name" type="text"  value="<?php echo $firstName; ?>">
-                            <label for="first_name">*First Name</label>
-                            <span class="helper-text" ><?php echo $firstNameErr ?></span>
+                            <div class="input-field col s6">
+                                <input id="last_name" name = "last_name" type="text"  value="<?php echo $lastName; ?>">
+                                <label for="last_name">*Last Name</label>
+                                <span class="helper-text" ><?php echo $lastNameErr ?></span>
+                            </div>
                         </div>
-
-                        <div class="input-field col s6">
-                            <input id="last_name" name = "last_name" type="text"  value="<?php echo $lastName; ?>">
-                            <label for="last_name">*Last Name</label>
-                            <span class="helper-text" ><?php echo $lastNameErr ?></span>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <input id="email" name = "email" type="text"  value="<?php echo $email; ?>">
-                            <label for="email">*Email</label>
-                            <span class="helper-text" ><?php echo $emailErr ?></span>
-                        </div>
-                        <div class="input-field col s6">
+                        <!--email + account name-->
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="email" name = "email" type="text"  value="<?php echo $email; ?>">
+                                <label for="email">*Email</label>
+                                <span class="helper-text" ><?php echo $emailErr ?></span>
+                            </div>
+                            <div class="input-field col s6">
                                 <input id="account" name ="account" type="text" value="<?php echo $accountName; ?>">
                                 <label for="account">*Account Name</label>
                                 <span class="helper-text" ><?php echo $accountNameErr ?></span>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <input id="input_text" name = "playlist_title" type="text" data-length="20" value="<?php echo $playlistTitle; ?>">
-                            <label for="playlist_title">Playlist Title</label>
-                        </div>
-               
-                        <div class="input-field col s12">
-                            <textarea id="textarea2"  name = "playlist_description" class="materialize-textarea"  data-length="200" value="<?php echo $playlistDescription; ?>"></textarea>
-                            <label for="playlist_description">Playlist Description</label>
-                        </div>
-                        <script>
-            
-                            $(document).ready(function() {
-                                $('input#input_text, textarea#textarea2').characterCounter();
-                            });
-                        </script>
-                    </div>
-
-                    <div class="row">
-
-                        <div class="file-field input-field">
-                            <div class="btn">
-                                <span>Choose Photo</span>
-                                <input type="file" name="fileImgToUpload" >
-                            
-                                
                             </div>
-                            
-                        <div class="file-path-wrapper">
-                            <input class="file-path validate" type="text" value="<?php echo $imgFileName; ?>">
-                            <span class="helper-text" ><?php echo $imgTextErr?></span>
+                        </div>
+                        <!--playlist_title + playlist_description-->
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="input_text" name = "playlist_title" type="text" data-length="20" value="<?php echo $playlistTitle; ?>">
+                                <label for="playlist_title">Playlist Title</label>
+                            </div>
+                
+                            <div class="input-field col s12">
+                                <textarea id="textarea2"  name = "playlist_description" class="materialize-textarea"  data-length="200" value="<?php echo $playlistDescription; ?>"></textarea>
+                                <label for="playlist_description">Playlist Description</label>
+                            </div>
+                            <!--show count of string-->
+                            <script>
+                                $(document).ready(function() {
+                                    $('input#input_text, textarea#textarea2').characterCounter();
+                                });
+                            </script>
+
                         </div>
 
-                        <div class="file-field input-field">
-                                                                                    
+                        <!--img upload + csv upload-->
+                        <div class="row">
+
+                            <div class="file-field input-field">
+                                <div class="btn">
+                                    <span>Choose Photo</span>
+                                    <input type="file" name="fileImgToUpload" >
+                                </div>
+                                
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" value="<?php echo $imgFileName; ?>">
+                                    <span class="helper-text" ><?php echo $imgTextErr?></span>
+                                </div>
+                            </div>
+
+                            <div class="file-field input-field">                                          
                                 <div class="btn">
                                     <span>Choose File</span>
                                     <input type="file" name="fileToUpload" >
-                                    
                                 </div>
-                            <div class="file-path-wrapper">
-                                <input class="file-path validate" type="text" value="<?php echo $csvFileName; ?>">
-                                <span class="helper-text" ><?php echo $csvTextErr ?></span>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" value="<?php echo $csvFileName; ?>">
+                                    <span class="helper-text" ><?php echo $csvTextErr ?></span>
+                                </div>
                             </div>
+                        </div>
 
 
+                        <div>
+                            <div class="row" id ="submit-btn" >
+                                <button class="btn waves-effect waves-light" type="submit" name="submit" >Submit
+                                    <i class="material-icons right">send</i>
+                                </button>
+                            </div>
+                        </div>
 
-                    </div>
-                    <div class="row" id ="submit-btn" >
-
-                        <button class="btn waves-effect waves-light" type="submit" name="submit" >Submit
-                                <i class="material-icons right">send</i>
-                        </button>
-
-                    </div>
-
-                    </div>
-
-                        
-
-                </form>
-
+                    </form>
+                </div>
             </div>
-
-            </div>
-    
         </div>
-        
-        
     </body>
 </html>
